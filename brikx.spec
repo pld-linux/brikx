@@ -1,12 +1,12 @@
 Summary:	Puzzle game
 Summary(pl):	Gra logiczna
 Name:		brikx
-Version:	0.2.9
+Version:	0.3.2
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
-Source0:	http://dl.sourceforge.net/brikx/%{name}-%{version}-source.tar.bz2
-# Source0-md5:	020a2ad6268e6888e7b0fbdf68aadb17
+Source0:	http://dl.sourceforge.net/brikx/%{name}-%{version}.tar.bz2
+# Source0-md5:	27bc1c87e87ce196a085ecf3b366dd25
 URL:		http://sourceforge.net/projects/brikx
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
@@ -27,7 +27,7 @@ kulek. W dokonaniu tego przeszkadzaj± inne kulki, grawitacja, ¶ciany
 oraz inne rzeczy.
 
 %prep
-%setup -q 
+%setup -q -n %{name}
 %{__sed} -i 's@data@%{_datadir}/%{name}@' src/brikx.h
 
 %build
