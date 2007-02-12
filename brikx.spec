@@ -1,6 +1,6 @@
 %define	_beta	beta2b
 Summary:	Puzzle game
-Summary(pl):	Gra logiczna
+Summary(pl.UTF-8):   Gra logiczna
 Name:		brikx
 Version:	0.2
 Release:	0.%{_beta}.1
@@ -22,9 +22,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A small puzzle game in which your goal is to remove all tiles. You are
 held up by other tiles, gravity, walls, and other things.
 
-%description -l pl
-Ma³a gra logiczna, w której celem gracza jest pozbycie siê wszystkich
-kulek. W dokonaniu tego przeszkadzaj± inne kulki, grawitacja, ¶ciany
+%description -l pl.UTF-8
+MaÅ‚a gra logiczna, w ktÃ³rej celem gracza jest pozbycie siÄ™ wszystkich
+kulek. W dokonaniu tego przeszkadzajÄ… inne kulki, grawitacja, Å›ciany
 oraz inne rzeczy.
 
 %prep
