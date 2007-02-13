@@ -1,5 +1,5 @@
 Summary:	Puzzle game
-Summary(pl.UTF-8):   Gra logiczna
+Summary(pl.UTF-8):	Gra logiczna
 Name:		brikx
 Version:	0.3.3
 Release:	1
