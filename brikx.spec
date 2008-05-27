@@ -1,8 +1,10 @@
+# TODO:
+# - fix build with new libtool (it loops and eats resources now)
 Summary:	Puzzle game
 Summary(pl.UTF-8):	Gra logiczna
 Name:		brikx
 Version:	0.4.1
-Release:	1
+Release:	1.1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/brikx/%{name}-%{version}-src.tar.bz2
@@ -15,7 +17,8 @@ BuildRequires:	SDL_ttf-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	freetype-devel
-BuildRequires:	libtool
+# FIXME
+BuildRequires:	libtool < 2:2.2.0
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
