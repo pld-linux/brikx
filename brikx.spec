@@ -17,7 +17,6 @@ BuildRequires:	SDL_ttf-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	freetype-devel
-# FIXME
 BuildRequires:	libtool
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -36,6 +35,7 @@ oraz inne rzeczy.
 %{__sed} -i 's@data@%{_datadir}/%{name}@' src/brikx.h
 
 %build
+%{__libtoolize}
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
