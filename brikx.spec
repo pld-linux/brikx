@@ -1,5 +1,3 @@
-# TODO:
-# - fix build with new libtool (it loops and eats resources now)
 Summary:	Puzzle game
 Summary(pl.UTF-8):	Gra logiczna
 Name:		brikx
