@@ -15,6 +15,7 @@ BuildRequires:	SDL_ttf-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	freetype-devel
+BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
