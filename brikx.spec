@@ -2,7 +2,7 @@ Summary:	Puzzle game
 Summary(pl.UTF-8):	Gra logiczna
 Name:		brikx
 Version:	0.4.5
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/brikx/0.4.5/%{name}.tar.bz2
