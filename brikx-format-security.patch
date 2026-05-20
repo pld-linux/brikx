@@ -1,0 +1,11 @@
+--- brikx.orig/src/brikx.cpp	2026-05-20 21:26:07.658243089 +0200
++++ brikx/src/brikx.cpp	2026-05-20 21:26:16.549550806 +0200
+@@ -122,7 +122,7 @@
+       }
+     for (i=0; i<MODES; i++)
+       fprintf(f,"%d\n",m[i]);
+-    if (text) fprintf(f,text);
++    if (text) fputs(text,f);
+     fclose(f);
+     return 1;
+ }

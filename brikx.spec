@@ -2,11 +2,12 @@ Summary:	Puzzle game
 Summary(pl.UTF-8):	Gra logiczna
 Name:		brikx
 Version:	0.4.5
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/brikx/0.4.5/%{name}.tar.bz2
 # Source0-md5:	faccd4420ea1d24eea3e4f9829f03c64
+Patch0:		%{name}-format-security.patch
 URL:		http://sourceforge.net/projects/brikx/
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
@@ -31,6 +32,7 @@ oraz inne rzeczy.
 
 %prep
 %setup -q -n %{name}
+%patch -P0 -p1
 %{__sed} -i 's@data@%{_datadir}/%{name}@' src/brikx.h
 
 %build
